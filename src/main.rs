@@ -1,15 +1,26 @@
+use std::ops::Index;
+
 
 fn main() {
-    let t1 = (1, true, 2.0);
-    let t2= (true, 2.0, 1);
+   let v1 = vec![1, 2, 3];
 
-    println!("{:?}", t1);
+   let mut v3 = Vec::new();
+   v3.push(1);
+   v3.push(2);
+   v3.push(3);
 
-    let i = t1.0;
-    println!("{}",i);
+   println!("{:?}", v3);
 
-    let (x, y, _) = t2;
+   let x = v3.pop();
 
-    let u = ();
-}
+   println!("{:?}", x);
+   println!("{:?}", v3);
+
+   let y = v3[1];
+   let z = v3.get( 100);
+   println!("{:?}", z);
+
+   let s = &v3[..1];
+
+}   
 
