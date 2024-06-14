@@ -1,16 +1,15 @@
 
 fn main() {
-    //数値型
-    let a = 1;
-    let b = 2.5;
+    let t1 = (1, true, 2.0);
+    let t2= (true, 2.0, 1);
 
-    let c: u16 = 1;
+    println!("{:?}", t1);
 
-    let d= 4.3f32;
+    let i = t1.0;
+    println!("{}",i);
 
-    let f: f64 = 1 as f64 + 3.2;
+    let (x, y, _) = t2;
 
-    //論理型
-    let g: bool = false;
+    let u = ();
 }
 
